@@ -9,16 +9,16 @@
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </style>
-<body class="w3-light-grey">
+<body  class="w3-dark-grey">
 
 <!-- w3-content defines a container for fixed size centered content, 
 and is wrapped around the whole page content, except for the footer in this example -->
-<div class="w3-content" style="max-width:1400px">
+<div class="w3-content" style="max-width:1400px" >
 
 <!-- Header -->
 <header class="w3-container w3-center w3-padding-32"> 
-  <h1><b>SQL Injection</b></h1>
-  <p>What is SQL injection (SQLi)?</p>
+  <h1><b>Hadoop Distributed File System (HDFS)</b></h1>
+  <p>What is Hadoop Distributed File System (HDFS)?</p>
 </header>
 
 <!-- Grid -->
@@ -28,17 +28,17 @@ and is wrapped around the whole page content, except for the footer in this exam
 <div class="w3-col l8 s12">
   <!-- Blog entry -->
   <div class="w3-card-4 w3-margin w3-white">
-    <img src="/blog1.png" alt="Nature" style="width:100%">
+    <img src="/3.png" alt="Nature" style="width:100%">
     <div class="w3-container">
-      <h3><b>SQL injection</b></h3>
+      <h3><b>Hadoop Distributed File System (HDFS) </b></h3>
       <h5> <span class="w3-opacity">May 25, 2021</span></h5>
     </div>
 
     <div class="w3-container">
-      <p>SQL injection is a code injection technique used to attack data-driven applications, in which malicious SQL statements are inserted into an entry field for execution (e.g. to dump the database contents to the attacker). SQL injection must exploit a security vulnerability in an application's software, for example, when user input is either incorrectly filtered for string literal escape characters embedded in SQL statements or user input is not strongly typed and unexpectedly executed. SQL injection is mostly known as an attack vector for websites but can be used to attack any type of SQL database.</p>
+      <p>HDFS is a distributed file system that handles large data sets running on commodity hardware. It is used to scale a single Apache Hadoop cluster to hundreds (and even thousands) of nodes. HDFS is one of the major components of Apache Hadoop, the others being MapReduce and YARN. HDFS should not be confused with or replaced by Apache HBase, which is a column-oriented non-relational database management system that sits on top of HDFS and can better support real-time data needs with its in-memory processing engine.</p>
       <div class="w3-row">
         <div class="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+          <p><button onclick="location.href = 'https://www.ibm.com/analytics/hadoop/hdfs ';" class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
         </div>
         <div class="w3-col m4 w3-hide-small">
           <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
@@ -50,17 +50,24 @@ and is wrapped around the whole page content, except for the footer in this exam
 
   <!-- Blog entry -->
   <div class="w3-card-4 w3-margin w3-white">
-  <img src="C:\Users\SAURAV\Downloads\veracode-soss-sql-injection.png" alt="Norway" style="width:100%">
+  <img src="/arch.jpeg" alt="Norway" style="width:100%">
     <div class="w3-container">
-      <h3><b>Impact of a successful SQL injection attack</b></h3>
+      <h3><b>HDFS architecture, NameNodes and DataNodes</b></h3>
       <h5> <span class="w3-opacity">May 25, 2021</span></h5>
     </div>
 
     <div class="w3-container">
-      <p>A successful SQL injection attack can result in unauthorized access to sensitive data, such as passwords, credit card details, or personal user information. Many high-profile data breaches in recent years have been the result of SQL injection attacks, leading to reputational damage and regulatory fines. In some cases, an attacker can obtain a persistent backdoor into an organization's systems, leading to a long-term compromise that can go unnoticed for an extended period.</p>
+	      <p><b>Namenode</b><br>
+		The namenode is the commodity hardware that contains the GNU/Linux operating system and the namenode software. It is a software that can be run on commodity hardware. The system having the namenode acts as the master server and it does the following tasks −
+		Manages the file system namespace.
+		Regulates client’s access to files. It also executes file system operations such as renaming, closing, and opening files and directories.
+	   <br><b>Datanode</b><br>
+		The datanode is a commodity hardware having the GNU/Linux operating system and datanode software. For every node (Commodity hardware/System) in a cluster, there will be a datanode. These nodes manage the data storage of their system.
+		Datanodes perform read-write operations on the file systems, as per client request.
+		They also perform operations such as block creation, deletion, and replication according to the instructions of the namenode.</p>
       <div class="w3-row">
         <div class="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+          <p><button onclick="location.href = 'https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-hdfs/HdfsDesign.html#:~:text=HDFS%20has%20a%20master%2Fslave,access%20to%20files%20by%20clients.&text=The%20DataNodes%20are%20responsible%20for,from%20the%20file%20system';" class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
         </div>
         <div class="w3-col m4 w3-hide-small">
           <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
@@ -78,51 +85,49 @@ and is wrapped around the whole page content, except for the footer in this exam
  
     <div class="w3-container w3-white">
       <h4><b>History</b></h4>
-      <p>SQL injection (SQLI) was considered one of the top 10 web application vulnerabilities of 2007 and 2010 by the Open Web Application Security Project. In 2013, SQLI was rated the number one attack on the OWASP top ten There are four main sub-classes of SQL injection:</p>
+      <p>According to its co-founders, Doug Cutting and Mike Cafarella, the genesis of Hadoop was the Google File System paper that was published in October 2003. This paper spawned another one from Google – "MapReduce: Simplified Data Processing on Large Clusters". Development started on the Apache Nutch project, but was moved to the new Hadoop subproject in January 2006.[19] Doug Cutting, who was working at Yahoo! at the time, named it after his son's toy elephant. The initial code that was factored out of Nutch consisted of about 5,000 lines of code for HDFS and about 6,000 lines of code for MapReduce.
+
+In March 2006, Owen O’Malley was the first committer to add to the Hadoop project; Hadoop 0.1.0 was released in April 2006. It continues to evolve through contributions that are being made to the project. The very first design document for the Hadoop Distributed File System was written by Dhruba Borthakur in 2007.</p>
     </div>
   </div><hr>
   
   <!-- Posts -->
   <div class="w3-card w3-margin">
     <div class="w3-container w3-padding">
-      <h4>Types of SQL Injection (SQLi)</h4>
+      <h4>Features of HDFS (HDFS)</h4>
     </div>
     <ul class="w3-ul w3-hoverable w3-white">
       <li class="w3-padding-16">
        
-        <span class="w3-large">In-band SQLi (Classic SQLi)</span><br>
+        <span class="w3-large">Data replication</span><br>
        
       </li>
       <li class="w3-padding-16">
        
-        <span class="w3-large">Error-based SQLi</span><br>
+        <span class="w3-large">Fault tolerance and reliability</span><br>
        
       </li> 
       <li class="w3-padding-16">
         
-        <span class="w3-large">Union-based SQLi</span><br>
+        <span class="w3-large">High availability</span><br>
        
       </li>   
       <li class="w3-padding-16 w3-hide-medium w3-hide-small">
        
-        <span class="w3-large">Inferential SQLi (Blind SQLi)</span><br>
+        <span class="w3-large">Scalability</span><br>
        
       </li>  
       <li class="w3-padding-16 w3-hide-medium w3-hide-small">
        
-        <span class="w3-large">Boolean-based (content-based) Blind SQLi</span><br>
+        <span class="w3-large">High throughput</span><br>
        
       </li> 
       <li class="w3-padding-16 w3-hide-medium w3-hide-small">
        
-        <span class="w3-large">Time-based Blind SQLi</span><br>
+        <span class="w3-large">Data locality</span><br>
        
       </li> 
-      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
-       
-        <span class="w3-large">Out-of-band SQLi</span><br>
-       
-      </li> 
+    
     </ul>
   </div>
   <hr> 
@@ -133,11 +138,11 @@ and is wrapped around the whole page content, except for the footer in this exam
       <h4>Tags</h4>
     </div>
     <div class="w3-container w3-white">
-    <p><span class="w3-tag w3-black w3-margin-bottom">SQL injection</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Botnet</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Malware</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Phishing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Man-in-the-middle attack</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Denial-of-service attack</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Zero-day exploit</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DNS Tunneling</span>  <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ransomware</span><span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Advance Malware Protection</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Firewall</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">VPN</span>
+    <p><span class="w3-tag w3-black w3-margin-bottom">Big Data</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">MapReduce</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">YARN</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Hive</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Pig</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Apache Mahout</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Apache Sqoop</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">HBase</span>  <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">HCatalog</span><span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Avro</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Thrift</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Apache Drill</span>
     </p>
     </div>
   </div>
@@ -153,10 +158,10 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 <!-- Footer -->
 <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
-  <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Demo</button>
-  <button onclick="location.href = 'http://localhost/icsmini/with_protection_validate.php';" class="w3-button w3-black w3-padding-large w3-margin-bottom">Login With Protection»</button>
-  <button onclick="location.href = 'http://localhost/icsmini/without_protection_validate.php';" class="w3-button w3-black w3-padding-large w3-margin-bottom">Login Without Protection»</button>
-  <p>ICS Mini Project</a></p>
+  <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
+  <button onclick="location.href = 'https://hadoop.apache.org/  ';" class="w3-button w3-black w3-padding-large w3-margin-bottom">Next»</button>
+ 
+  <p>Cloud Computing Mini Project</a></p>
 </footer>
 
 </body>
